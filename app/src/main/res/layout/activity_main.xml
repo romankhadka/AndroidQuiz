@@ -1,5 +1,4 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="16dp">
@@ -9,7 +8,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Question 1: What is the capital of France?"/>
+            android:text="What is the capital of France?" />
 
     <RadioGroup
             android:id="@+id/radioGroup"
@@ -22,22 +21,25 @@
                 android:id="@+id/option1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Berlin"/>
+                android:text="Berlin" />
+
         <RadioButton
                 android:id="@+id/option2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="London"/>
+                android:text="London" />
+
         <RadioButton
                 android:id="@+id/option3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Paris"/>
+                android:text="Paris" />
+
         <RadioButton
                 android:id="@+id/option4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Madrid"/>
+                android:text="Madrid" />
 
     </RadioGroup>
 
@@ -47,48 +49,52 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/radioGroup"
             android:layout_marginTop="16dp"
-            android:text="Question 2: Which programming languages are used in Android development?"/>
+            android:text="Which programming languages are used in Android development?" />
 
     <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginTop="140dp"
-            android:id="@+id/secondQuestion">
+            android:layout_height="wrap_content"
+            android:id="@+id/secondQuestion"
+            android:layout_below="@id/questionTextView2"
+            android:layout_marginTop="16dp">
+
         <CheckBox
                 android:id="@+id/checkBox1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Java"/>
+                android:layout_height="wrap_content"
+                android:text="Java" />
 
         <CheckBox
                 android:id="@+id/checkBox2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
-                android:text="Kotlin"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkBox1"
+                android:text="Kotlin" />
 
         <CheckBox
                 android:id="@+id/checkBox3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="200dp"
-                android:text="Swift"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkBox2"
+                android:text="Swift" />
 
         <CheckBox
                 android:id="@+id/checkBox4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="300dp"
-                android:text="C#"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkBox3"
+                android:text="C#" />
     </RelativeLayout>
 
+
     <Button
+            android:layout_marginTop="40dp"
             android:id="@+id/submitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
             android:layout_below="@id/secondQuestion"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp" />
 
     <Button
             android:id="@+id/resetButton"
@@ -97,6 +103,6 @@
             android:text="Reset"
             android:layout_below="@id/submitButton"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp" />
 
 </RelativeLayout>
